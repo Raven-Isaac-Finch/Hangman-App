@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b6b6b6;
+}
+
+main {
+    width: 50%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 5px #000000;;
+}
+
+#page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page-title h1 {
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+
+#page-title p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/*-------------------- Words --------------------*/
+#game {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#word {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.line {
+    width: 30px;
+    text-align: center;
+    border-bottom: 5px solid blue;
+}
+
+/*-------------------- The Hang Post --------------------*/
+
+#rod {
+    position: relative;
+}
+
+.gallows {
+    background-color: brown;
+    position: absolute;
+}
+
+#floor-part {
+    width: 100px;
+    height: 5px;
+    right: 20px;
+    top: 7px;
+}
+
+#pole-part {
+    width: 5px;
+    height: 200px;
+    right: 95px;
+    top: -188px;
+}
+
+#post-part {
+    width: 100px;
+    height: 5px;
+    right: 20px;
+    top: -190px;
+}
+
+#hook-part {
+    width: 5px;
+    height: 30px;
+    right: 20px;
+    top: -190px;
+}
+
+/*-------------------- The Unluck Dude --------------------*/
