@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #b6b6b6;
+    background-color: #728cb3;
 }
 
 main {
@@ -21,17 +21,19 @@ main {
     background-color: #fff;
     border-radius: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     box-shadow: 5px 5px 15px 5px #000000;;
 }
 
+/*-------------------- Title Section --------------------*/
 #page-title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 #page-title h1 {
@@ -50,6 +52,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#wrong-guesses {
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #word {
@@ -104,4 +116,111 @@ main {
     top: -190px;
 }
 
-/*-------------------- The Unluck Dude --------------------*/
+/*-------------------- The Unlucky Dude --------------------*/
+
+#the-dude {
+    position: relative;
+}
+
+#head {
+    background-color: rgb(243, 166, 166);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    right: -3px;
+    top: -165px;
+    display: none;
+}
+
+#body {
+    background-color: rgb(243, 166, 166);
+    width: 30px;
+    height: 80px;
+    position: absolute;
+    right: 7px;
+    top: -145px;
+    display: none;
+}
+
+#right-arm {
+    background-color: rgb(243, 166, 166);
+    width: 15px;
+    height: 60px;
+    position: absolute;
+    right: 40px;
+    top: -120px;
+    transform: rotate(20deg);
+    display: none;
+}
+
+#left-arm {
+    background-color: rgb(243, 166, 166);
+    width: 15px;
+    height: 60px;
+    position: absolute;
+    right: -10px;
+    top: -120px;
+    transform: rotate(-20deg);
+    display: none;
+}
+
+#right-leg {
+    background-color: rgb(125, 186, 243);
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    right: 5px;
+    top: -67px;
+    transform: rotate(-5deg);
+    display: none;
+}
+
+#left-leg {
+    background-color: rgb(125, 186, 243);
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    right: 24px;
+    top: -67px;
+    transform: rotate(5deg);
+    display: none;
+}
+
+/*-------------------- Notification Window --------------------*/
+#notification {
+    background-color: black;
+    position: absolute;
+    color: white;
+    padding: 40px;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #000000;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#notification button {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color:  white;
+    transition: 0.2s ease-in-out;
+}
+
+#notification button:hover {
+    background-color: rgba(44, 44, 44, 0.5);
+    transform: scale(1.1, 1.1);
+}
+
+#notification button:active {
+    background-color: rgba(44, 44, 44, 0.8);
+    transform: scale(1, 1);
+}
+

@@ -14,6 +14,9 @@
             <h1>Hangman Game</h1>
             <p>Try to Guess the Word!</p>
         </div>
+        <div id="wrong-guesses">
+            <p>Wrong Letters</p>
+        </div>
         <div id="game">
             <div id="rod">
                 <div class="gallows"  id="floor-part"></div>
@@ -22,26 +25,25 @@
                 <div class="gallows" id="hook-part"></div>
             </div>
             <div id="the-dude">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div id="head"></div>
+                <div id="body"></div>
+                <div id="right-arm"></div>
+                <div id="left-arm"></div>
+                <div id="right-leg"></div>
+                <div id="left-leg"></div>
             </div>
             <div id="word">
-                <div class="line">P</div>
-                <div class="line">Y</div>
-                <div class="line">T</div>
-                <div class="line">H</div>
-                <div class="line">O</div>
-                <div class="line">N</div>
+
             </div>
         </div>
     </main>
 
-    <div id="notifaction">
+    <div id="notification">
         <p>Congratulations!</p>
+        <button>Play Again!</button>
+    </div>
+    <div id="already-entered">
+        <p>You Have Already Entered This Letter!</p>
     </div>
 </body>
 </html>
