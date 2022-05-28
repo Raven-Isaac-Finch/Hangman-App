@@ -15,7 +15,8 @@
             <p>Try to Guess the Word!</p>
         </div>
         <div id="wrong-guesses">
-            <p>Wrong Letters</p>
+            <h4>Wrong Letters</h4>
+            <p id="wrong-letter-display"></p>
         </div>
         <div id="game">
             <div id="rod">
@@ -25,25 +26,24 @@
                 <div class="gallows" id="hook-part"></div>
             </div>
             <div id="the-dude">
-                <div id="head"></div>
-                <div id="body"></div>
-                <div id="right-arm"></div>
-                <div id="left-arm"></div>
-                <div id="right-leg"></div>
-                <div id="left-leg"></div>
+                <div class="head sad-dude-part"></div>
+                <div class="body sad-dude-part"></div>
+                <div class="right-arm sad-dude-part"></div>
+                <div class="left-arm sad-dude-part"></div>
+                <div class="right-leg sad-dude-part"></div>
+                <div class="left-leg sad-dude-part"></div>
             </div>
             <div id="word">
 
             </div>
         </div>
     </main>
-
-    <div id="notification">
-        <p>Congratulations!</p>
-        <button>Play Again!</button>
-    </div>
-    <div id="already-entered">
-        <p>You Have Already Entered This Letter!</p>
+    <div id="input-check">
+        <p></p>
     </div>
 </body>
+<div id="notification">
+    <p id="notif-text">Congratulations!</p>
+    <button id="restart-btn">Play Again!</button>
+</div>
 </html>

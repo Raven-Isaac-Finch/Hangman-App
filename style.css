@@ -57,11 +57,22 @@ main {
 #wrong-guesses {
     margin-bottom: 7rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     width: 80%;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#wrong-guesses h4 {
     text-decoration: underline;
+}
+
+#wrong-letter-display {
+    height: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #word {
@@ -69,12 +80,15 @@ main {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
+    height: 2.5rem;
 }
 
 .line {
     width: 30px;
     text-align: center;
     border-bottom: 5px solid blue;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 /*-------------------- The Hang Post --------------------*/
@@ -122,7 +136,7 @@ main {
     position: relative;
 }
 
-#head {
+.head {
     background-color: rgb(243, 166, 166);
     width: 50px;
     height: 50px;
@@ -133,7 +147,7 @@ main {
     display: none;
 }
 
-#body {
+.body {
     background-color: rgb(243, 166, 166);
     width: 30px;
     height: 80px;
@@ -143,7 +157,7 @@ main {
     display: none;
 }
 
-#right-arm {
+.right-arm {
     background-color: rgb(243, 166, 166);
     width: 15px;
     height: 60px;
@@ -154,7 +168,7 @@ main {
     display: none;
 }
 
-#left-arm {
+.left-arm {
     background-color: rgb(243, 166, 166);
     width: 15px;
     height: 60px;
@@ -165,7 +179,7 @@ main {
     display: none;
 }
 
-#right-leg {
+.right-leg {
     background-color: rgb(125, 186, 243);
     width: 15px;
     height: 50px;
@@ -176,7 +190,7 @@ main {
     display: none;
 }
 
-#left-leg {
+.left-leg {
     background-color: rgb(125, 186, 243);
     width: 15px;
     height: 50px;
@@ -195,12 +209,13 @@ main {
     padding: 40px;
     font-size: 2rem;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 0px #000000;;
+    box-shadow: 0px 0px 10px 0px #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     display: none;
+    width: 30%;
 }
 
 #notification button {
@@ -222,5 +237,18 @@ main {
 #notification button:active {
     background-color: rgba(44, 44, 44, 0.8);
     transform: scale(1, 1);
+}
+
+#input-check {
+    background-color: lightcyan;
+    transition: 0.2s ease-in-out;
+    padding: 40px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px #000000;
+    top: 0;
+    display: none;
+    transition: transform 0.5s ease-in-out;
 }
 
