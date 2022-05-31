@@ -76,7 +76,7 @@ main {
 }
 
 #word {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
@@ -87,7 +87,7 @@ main {
     width: 30px;
     text-align: center;
     border-bottom: 5px solid blue;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -250,5 +250,9 @@ main {
     top: 0;
     display: none;
     transition: transform 0.5s ease-in-out;
+}
+
+#notif-text {
+    text-align: center;
 }
 
